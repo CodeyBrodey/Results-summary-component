@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <!-- result -->
+    <div class="result">
+      <h1 class="result__title">Your Result</h1>
+      <p class="result__score"><span class="result__score--var">76</span> of 100</p>
+      <p class="result__grade">Great</p>
+      <p class="result__ranking">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    
+    <!-- summary -->
+    <div class="summary">
+      <h2 class="summary__title">Summary</h2>
+
+      <div class="summary__component summary__component--reaction">
+        <div class="summary__component__div summary__component__div--reaction">
+          <img class='summary__component__icon' src="/assets/images/icon-reaction.svg" alt="">
+          <p class="summary__component__title">Reaction</p>
+        </div>
+        <p class="summary__component__score"><span class="summary__component__score--var">ERROR</span> / 100</p>
+      </div>
+
+      <div class="summary__component summary__component--memory">
+        <div class="summary__component__div summary__component__div--memory">
+          <img class='summary__component__icon' src="/assets/images/icon-memory.svg" alt="">
+          <p class="summary__component__title">Memory</p>
+        </div>
+        <p class="summary__component__score"><span class="summary__component__score--var">ERROR</span> / 100</p>
+      </div>
+
+      <div class="summary__component summary__component--verbal">
+        <div class="summary__component__div summary__component__div--verbal">
+          <img class='summary__component__icon' src="/assets/images/icon-verbal.svg" alt="">
+          <p class="summary__component__title">Verbal</p>
+        </div>
+        <p class="summary__component__score"><span class="summary__component__score--var">ERROR</span> / 100</p>
+      </div>
+
+      <div class="summary__component summary__component--visual">
+        <div class="summary__component__div summary__component__div--visual">
+          <img class='summary__component__icon' src="/assets/images/icon-visual.svg" alt="">
+          <p class="summary__component__title">Visual</p>
+        </div>
+        <p class="summary__component__score"><span class="summary__component__score--var">ERROR</span> / 100</p>
+      </div>
+      
+      <button class="summary__button">Continue</button>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
