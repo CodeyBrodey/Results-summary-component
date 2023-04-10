@@ -25,6 +25,8 @@
     --circle-2: hsla(241, 72%, 46%, 0);
 }
 
+
+/* general */
 *,
 *::before,
 *::after {
@@ -45,7 +47,7 @@ body {
 }
 
 main{
-    max-width: 325px;
+    max-width: 300px;
 }
 
 
@@ -119,7 +121,7 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    margin: 0.5em 0;
+    margin: 1em 0;
 
     border-radius: 10px;
     color: var(--700);
@@ -186,6 +188,83 @@ main{
     border-radius: 25px;
     background-color: var(--700);
     color: var(--100);
-    font-size: 0,8rem;
+    font-size: 0.9rem;
     font-weight: 600;
+}
+
+.summary__button:hover{
+    background: linear-gradient(var(--background-1), var(--background-2));
+    cursor: pointer;
+}
+
+
+@media (min-width: 600px){
+    /* general */
+    body{
+        min-height: 100vh;
+    }
+
+    main{
+        min-width: 500px;
+        display: flex;
+        margin: 2em;
+
+        box-shadow: var(--100) 1em 1em 50px;
+        border-radius: 25px;
+    }
+
+
+    /* result */
+    .result{
+        min-height: 350px;
+        min-width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        border-radius: 25px;
+    }
+
+    .result__title{
+        font-size: 1rem;
+    }
+
+    .result__score{
+        width: 125px;
+        height: 125px;
+    }
+
+    .result__score--var{
+        font-size: 2.75rem;
+    }
+
+    .result__grade{
+        font-size: 1.25rem;
+    }
+
+
+    /* summary */
+    .summary{
+        min-width: 250px;
+    }
+
+    .summary__title{
+        padding: 1.5em 0 0.5em 0;
+
+        font-size: 1rem;
+    }
+
+    .summary__component{
+        padding: 0.85em 1em;
+    }
+
+    .summary__component__icon{
+        max-width: 15px;
+    }
+
+    .summary__button{
+        padding: 0.8em;
+
+        font-size: 0.8rem;
+    }
 }
